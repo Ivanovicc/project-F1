@@ -1,0 +1,79 @@
+.list-title {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 100vw;
+  min-height: 400px;
+  max-height: 550px;
+  min-width: 300px;
+  color: #eee;
+}
+.list-title:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.12) 40%,
+    rgba(27, 32, 48, 1) 100%
+  );
+}
+.list-title:before {
+  content: "";
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden, scale(1, 1);
+  transform: translateZ(0);
+  background: #1b2030
+    url(https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/2021FranceManualAdds/Friday/GettyImages-1324223895.jpg)
+    50% 0 no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  animation: grow 360s linear 10ms infinite;
+  transition: all 0.4s ease-in-out;
+  z-index: -2;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    transform: scale(1.2) translateY(-200px);
+  }
+}
+
+.circuit-title {
+  flex: 0 0 auto;
+  width: 50%;
+  width: 100%;
+  padding: 15% 10% 0 10%;
+  text-align: center;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.grid-circuits {
+  padding: 5% 3%;
+  line-height: 1.3rem;
+}
+
+.circuits-wrapper {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  grid-auto-rows: minmax(100px, auto);
+}

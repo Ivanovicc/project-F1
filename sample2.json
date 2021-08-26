@@ -1,0 +1,214 @@
+{
+  "teams": [
+    {
+      "imgTeam": "https://www.formula1.com/content/fom-website/en/teams/Alfa-Romeo-Racing/_jcr_content/logo.img.jpg/1582650603836.jpg",
+      "name": "Alfa Romeo Racing",
+      "fullName": "Alfa Romeo Racing ORLEN",
+      "drivers": [
+        {
+          "firstName": "Kimi",
+          "lastName": " Räikkönen",
+          "driverNum": "7"
+        },
+        {
+          "firstName": "Antonio",
+          "lastName": "Giovinazzi",
+          "driverNum": "99"
+        }
+      ],
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2021/alfa-romeo-racing.png.transform/4col/image.png",
+      "chasis": "C41",
+      "powerUnity": "Ferrari",
+      "nationality": "Swiss"
+    },
+    {
+      "imgTeam": "https://www.formula1.com/content/fom-website/en/teams/AlphaTauri/_jcr_content/logo.img.jpg/1582650557134.jpg",
+      "name": "AlphaTauri",
+      "fullName": "Scuderia AlphaTauri Honda",
+      "drivers": [
+        {
+          "firstName": "Pierre",
+          "lastName": "Gasly",
+          "driverNum": "10"
+        },
+        {
+          "firstName": "Yuki",
+          "lastName": "Tsunoda",
+          "driverNum": "22"
+        }
+      ],
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2021/alphatauri.png.transform/4col/image.png",
+      "chasis": "AT02",
+      "powerUnity": "Honda",
+      "nationality": "Italian"
+    },
+    {
+      "imgTeam": "https://www.formula1.com/content/fom-website/en/teams/Alpine/_jcr_content/logo.img.jpg/1611246834255.jpg",
+      "name": "Alpine",
+      "fullName": "Alpine F1 Team",
+      "drivers": [
+        {
+          "firstName": "Fernando",
+          "lastName": "Alonso",
+          "driverNum": "14"
+        },
+        {
+          "firstName": "Esteban",
+          "lastName": "Ocon",
+          "driverNum": "31"
+        }
+      ],
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2021/alpine.png.transform/4col/image.png",
+      "chasis": "A521",
+      "powerUnity": "Renault",
+      "nationality": "French"
+    },
+    {
+      "imgTeam": "https://www.formula1.com/content/fom-website/en/teams/Aston-Martin/_jcr_content/logo.img.png/1610642928926.png",
+      "name": "Aston Martin",
+      "fullName": "Aston Martin Cognizant F1 Team",
+      "drivers": [
+        {
+          "firstName": "Sebastian",
+          "lastName": "Vettel",
+          "driverNum": "5"
+        },
+        {
+          "firstName": "Lance",
+          "lastName": "Stroll",
+          "driverNum": "18"
+        }
+      ],
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2021/aston-martin.png.transform/4col/image.png",
+      "chasis": "AMR21",
+      "powerUnity": "Mercedes",
+      "nationality": "British"
+    },
+    {
+      "imgTeam": "https://www.formula1.com/content/fom-website/en/teams/Ferrari/_jcr_content/logo.img.jpg/1521797474166.jpg",
+      "name": "Ferrari",
+      "fullName": "Scuderia Ferrari Mission Winnow",
+      "drivers": [
+        {
+          "firstName": "Charles",
+          "lastName": "Leclerc",
+          "driverNum": "16"
+        },
+        {
+          "firstName": "Carlos",
+          "lastName": "Sainz",
+          "driverNum": "55"
+        }
+      ],
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2021/ferrari.png.transform/4col/image.png",
+      "chasis": "SF21",
+      "powerUnity": "Ferrari",
+      "nationality": "Italian"
+    },
+    {
+      "imgTeam": "https://www.formula1.com/content/fom-website/en/teams/Haas-F1-Team/_jcr_content/logo.img.jpg/1615481143675.jpg",
+      "name": "Hass F1 Team",
+      "fullName": "Uralkali Haas F1 Team",
+      "drivers": [
+        {
+          "firstName": "Mick",
+          "lastName": "Schumacher",
+          "driverNum": "47"
+        },
+        {
+          "firstName": "Nikita",
+          "lastName": "Mazepin",
+          "driverNum": "9"
+        }
+      ],
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2021/haas-f1-team.png.transform/4col/image.png",
+      "chasis": "VF-21",
+      "powerUnity": "Ferrari",
+      "nationality": "American"
+    },
+    {
+      "imgTeam": "https://www.formula1.com/content/fom-website/en/teams/McLaren/_jcr_content/logo.img.jpg/1515152760829.jpg",
+      "name": "McLaren",
+      "fullName": "McLaren F1 Team",
+      "drivers": [
+        {
+          "firstName": "Daniel",
+          "lastName": "Ricciardo",
+          "driverNum": "3"
+        },
+        {
+          "firstName": "Lando",
+          "lastName": "Norris",
+          "driverNum": "4"
+        }
+      ],
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2021/mclaren.png.transform/4col/image.png",
+      "chasis": "MCL35M",
+      "powerUnity": "Mercedes",
+      "nationality": "British"
+    },
+    {
+      "imgTeam": "https://www.formula1.com/content/fom-website/en/teams/Mercedes/_jcr_content/logo.img.jpg/1582638425211.jpg",
+      "name": "Mercedes",
+      "fullName": "Mercedes-AMG Petronas F1 Team",
+      "drivers": [
+        {
+          "firstName": "Lewis",
+          "lastName": "Hamilton",
+          "driverNum": "44"
+        },
+        {
+          "firstName": "Valtteri",
+          "lastName": "Bottas",
+          "driverNum": "77"
+        }
+      ],
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2021/mercedes.png.transform/4col/image.png",
+      "chasis": "W12",
+      "powerUnity": "Mercedes",
+      "nationality": "German"
+    },
+    {
+      "imgTeam": "https://www.formula1.com/content/fom-website/en/teams/Red-Bull-Racing/_jcr_content/logo.img.jpg/1610719164360.jpg",
+      "name": "Red Bull Racing",
+      "fullName": "Red Bull Racing Honda",
+      "drivers": [
+        {
+          "firstName": "Max",
+          "lastName": "Verstappen",
+          "driverNum": "33"
+        },
+        {
+          "firstName": "Sergio",
+          "lastName": "Perez",
+          "driverNum": "11"
+        }
+      ],
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2021/red-bull-racing.png.transform/4col/image.png",
+      "chasis": "RB16B",
+      "powerUnity": "Honda",
+      "nationality": "Austrian"
+    },
+    {
+      "imgTeam": "https://www.formula1.com/content/fom-website/en/teams/Williams/_jcr_content/logo.img.jpg/1590743731407.jpg",
+      "name": "Williams",
+      "fullName": "Williams Racing",
+      "drivers": [
+        {
+          "firstName": "George",
+          "lastName": "Russell",
+          "driverNum": "63"
+        },
+        {
+          "firstName": "Nicholas",
+          "lastName": "Latifi",
+          "driverNum": "6"
+        }
+      ],
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2021/williams.png.transform/4col/image.png",
+      "chasis": "FW43B",
+      "powerUnity": "Mercedes",
+      "nationality": "British"
+    }
+  ]
+}

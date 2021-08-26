@@ -1,0 +1,79 @@
+.circuit-card {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 400px;
+  height: 350px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 150ms;
+  transform: rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 4px;
+}
+
+.circuit-card:hover {
+  --translate-y: -2px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px;
+}
+
+.circuit-card.turn {
+  --rotate-y: 180deg;
+}
+
+.circuit-card .front,
+.circuit-card .back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.circuit-card .back {
+  transform: rotateY(180deg);
+}
+
+.circuit-card .card__info span {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.circuit-card .card__info img {
+  width: 250px;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #1f1f1f;
+  width: 100%;
+  height: 100%;
+}
+.circuit-card .card__profile img {
+  width: 40px;
+  height: 30px;
+  border-radius: 10%;
+  object-position: center;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.card__profile__text {
+  text-align: center;
+}
+
+/* .circuit-card .card__profile h2 {
+  color: #fff;
+  font-size: 1.1rem;
+}
+.circuit-card .card__profile p {
+  color: #a1b2bc;
+  font-size: 0.9rem;
+}
+.circuit-card .card__profile p b {
+  font-style: italic;
+} */
