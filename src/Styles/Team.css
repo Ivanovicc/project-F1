@@ -1,5 +1,6 @@
 .team-container {
   display: flex;
+  background-color: #ffffff;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -15,40 +16,46 @@
   height: 350px;
 }
 
-.team-container:hover {
-  --translate-y: -2px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px;
-}
-
 .team-container.flip {
   --rotate-y: 180deg;
 }
 
-.team-container .front,
-.team-container .back {
+.team-container .team-front,
+.team-container .team-back {
   position: absolute;
   padding: 1rem;
   backface-visibility: hidden;
 }
 
 .back-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
-.back ul {
+.team-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  color: #fff;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.team-back ul {
   padding: 0;
   margin: 20px 0 50px 0;
   list-style-type: none;
 }
 
-.back li {
+.team-back li {
   margin: 10px 0;
-  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-size: 1.2rem;
 }
 
-.team-container .back {
+.team-container .team-back {
   transform: rotateY(180deg);
 }
 
@@ -65,13 +72,13 @@
 
 .team-name {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  color: #1f1f1f;
   justify-content: center;
 }
 
 .team-name h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 20px 0 10px 0;
 }
 
 .team-image img {

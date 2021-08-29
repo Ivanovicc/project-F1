@@ -1,5 +1,6 @@
 .circuit-card {
   display: flex;
+  background-color: #ffffff;
   justify-content: center;
   cursor: pointer;
   width: 400px;
@@ -12,24 +13,17 @@
   border-radius: 4px;
 }
 
-.circuit-card:hover {
-  --translate-y: -2px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px;
-}
-
 .circuit-card.turn {
   --rotate-y: 180deg;
 }
 
-.circuit-card .front,
-.circuit-card .back {
+.circuit-card .circuit-front,
+.circuit-card .circuit-back {
   position: absolute;
   backface-visibility: hidden;
 }
 
-.circuit-card .back {
+.circuit-card .circuit-back {
   transform: rotateY(180deg);
 }
 
@@ -42,38 +36,39 @@
   width: 250px;
 }
 
-.back {
+.circuit-back {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: #fff;
-  padding: 1rem;
   border-radius: 4px;
   background-color: #1f1f1f;
   width: 100%;
   height: 100%;
 }
-.circuit-card .card__profile img {
-  width: 40px;
-  height: 30px;
-  border-radius: 10%;
-  object-position: center;
-  object-fit: cover;
-  margin-right: 15px;
+
+.card__profile ul {
+  padding: 0;
+  margin: 20px 0 50px 0;
+  list-style-type: none;
+}
+
+.card__profile li {
+  margin: 10px 0;
+  line-height: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .card__profile__text {
   text-align: center;
+  color: #1f1f1f;
+  font-size: 0.9rem;
+  margin: 20px 0 10px 0;
 }
 
-/* .circuit-card .card__profile h2 {
-  color: #fff;
-  font-size: 1.1rem;
+.card__profile__text p {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-top: 0.75rem;
 }
-.circuit-card .card__profile p {
-  color: #a1b2bc;
-  font-size: 0.9rem;
-}
-.circuit-card .card__profile p b {
-  font-style: italic;
-} */

@@ -30,21 +30,19 @@ export default function Drivers() {
       </div>
       <section className="drivers-title">
         <div className="drivers-container">
-          {!drivers
-            ? "Me cago en tu puta madre"
-            : drivers.map((d) => {
-                return (
-                  <Driver
-                    key={d.id}
-                    imageNumber={d.imageNumber}
-                    image={d.image}
-                    name={d.name}
-                    lastName={d.lastName}
-                    team={d.team}
-                    countryFlag={d.countryFlag}
-                  />
-                );
-              })}
+          {drivers.map((d) => {
+            return (
+              <Driver
+                key={d.id}
+                imageNumber={d.imageNumber}
+                image={d.image}
+                name={d.name}
+                lastName={d.lastName}
+                team={d.team}
+                countryFlag={d.countryFlag}
+              />
+            );
+          })}
         </div>
       </section>
     </>

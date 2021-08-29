@@ -19,7 +19,7 @@ export default function Team({
         className={`team-container ${flip ? "flip" : ""}`}
         onClick={() => setFlip(!flip)}
       >
-        <div className="front">
+        <div className="team-front">
           <div className="team-image">
             <img src={imgTeam} alt={chasis} />
           </div>
@@ -30,7 +30,7 @@ export default function Team({
             <h2>{name}</h2>
           </div>
         </div>
-        <div className="back">
+        <div className="team-back">
           <div className="back-title">
             <h1>Info</h1>
           </div>
