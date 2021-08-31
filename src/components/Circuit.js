@@ -47,12 +47,17 @@ export default function Circuit({
               </li>
               <li>
                 Fastest Lap:{" "}
-                <span>
-                  {fastestLap.time}, {fastestLap.driver}
-                </span>
+                {fastestLap.time && fastestLap.driver ? (
+                  <span>
+                    {fastestLap.time}, {fastestLap.driver}
+                  </span>
+                ) : (
+                  "---"
+                )}
               </li>
               <li>
-                Last Winner: <span>{raceResult.winner}</span>
+                Last Winner:{" "}
+                <span>{raceResult.winner ? raceResult.winner : "---"}</span>
               </li>
             </ul>
           </div>
