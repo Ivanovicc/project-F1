@@ -72,10 +72,14 @@
 
 .drivers-container {
   margin-top: 4rem;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 60px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(100px, auto); */
 }
 
 .driver-card {

@@ -1,4 +1,4 @@
-.container {
+/* .container {
   background-position: center;
   background-color: #ffffff;
   width: 300px;
@@ -49,4 +49,116 @@
 }
 .container .container__profile p b {
   font-style: italic;
+}
+ */
+
+.card-driver {
+  flex: 0 0 33%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 33%;
+}
+
+.link-driver {
+  display: block;
+  text-decoration-color: initial;
+  text-decoration: none;
+}
+
+.field-link {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding-right: 10px;
+  padding-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.rank-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #949498;
+}
+
+.name-wrapper {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #949498;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.driver-span {
+  text-transform: uppercase;
+  padding-left: 15px;
+  position: relative;
+}
+
+.driver-nation {
+  border-radius: 5px;
+  border: 1px solid #949498;
+  height: 32px;
+  width: 48px;
+  overflow: hidden;
+}
+
+.driver-nation img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+.team-name {
+  padding-top: 15px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 15px;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.photo-wrapper {
+  height: 167px;
+  position: relative;
+  text-align: right;
+}
+
+.driver-pic {
+  height: 192px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: -25px;
+  width: 192px;
+}
+
+.driver-num {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 97px;
+  height: 55px;
 }

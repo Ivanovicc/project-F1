@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from "react";
+import db from "../services/firebaseConfig";
 /* Styles */
 import "../Styles/Drivers.css";
 /* Components */
-import { getDrivers } from "../api";
+/* import { getDrivers } from "../api"; */
 import Driver from "./Driver";
 
 export default function Drivers() {
   const [drivers, setDrivers] = useState([]);
 
   const fetchDriver = async () => {
-    try {
-      const data = await getDrivers();
-      setDrivers(data);
-    } catch (error) {
-      console.log(error);
-    }
+    db.collection("drivers").onSnapshot((querySnapshot) => {
+      const drivers = [];
+      querySnapshot.forEach((doc) => {
+        drivers.push(doc.data());
+      });
+      setDrivers(drivers);
+    });
   };
 
   useEffect(() => {
@@ -30,19 +32,26 @@ export default function Drivers() {
       </div>
       <section className="drivers-title">
         <div className="drivers-container">
-          {drivers.map((d) => {
-            return (
-              <Driver
-                key={d.id}
-                imageNumber={d.imageNumber}
-                image={d.image}
-                name={d.name}
-                lastName={d.lastName}
-                team={d.team}
-                countryFlag={d.countryFlag}
-              />
-            );
-          })}
+          {drivers
+            .sort((a, b) => {
+              if (a.currPoints < b.currPoints) {
+                return 1;
+              } else return -1;
+            })
+            .map((d, key) => {
+              return (
+                <Driver
+                  key={key}
+                  currentPos={d.currentPos}
+                  currPoints={d.currPoints}
+                  number={d.number}
+                  photo={d.photo}
+                  name={d.name}
+                  team={d.team}
+                  countryFlag={d.countryFlag}
+                />
+              );
+            })}
         </div>
       </section>
     </>

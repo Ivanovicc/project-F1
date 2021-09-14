@@ -38,7 +38,11 @@ export default function Header() {
             </p>
           </div>
           <p align="center">
-            <a href="https://twitter.com/nodws" class="btn twtr" target="_b">
+            <a
+              href="https://twitter.com/nodws"
+              className="btn twtr"
+              target="_b"
+            >
               Follow me on Twitter
             </a>
           </p>
@@ -57,7 +61,11 @@ export default function Header() {
             </p>
           </div>
           <p align="center">
-            <a href="https://twitter.com/nodws" class="btn twtr" target="_b">
+            <a
+              href="https://twitter.com/nodws"
+              className="btn twtr"
+              target="_b"
+            >
               Follow me on Twitter
             </a>
           </p>
