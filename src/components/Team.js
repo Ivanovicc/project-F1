@@ -11,10 +11,40 @@ export default function Team({
   powerUnity,
   nationality,
 }) {
-  const [flip, setFlip] = useState(false);
+  /*  const [flip, setFlip] = useState(false); */
 
   return (
-    <>
+    <div className="card-team">
+      <a className="link-driver">
+        <fieldset className="field-link">
+          <div className="rank-wrapper">
+            <div className="current-points">points</div>
+            <div className="points-label">PTS</div>
+          </div>
+          <div className="name-wrapper">
+            <div className="driver-span">
+              <span>{name}</span>
+            </div>
+          </div>
+          <div className="rank-wrapper">
+            <div>
+              <span>{drivers[0].lastName}</span>
+            </div>
+            <div>
+              <span>{drivers[1].lastName}</span>
+            </div>
+          </div>
+          <div>
+            <div>
+              <picture>
+                <img src={carImg} alt="" />
+              </picture>
+            </div>
+          </div>
+        </fieldset>
+      </a>
+    </div>
+    /* <>
       <div
         className={`team-container ${flip ? "flip" : ""}`}
         onClick={() => setFlip(!flip)}
@@ -54,6 +84,6 @@ export default function Team({
           </ul>
         </div>
       </div>
-    </>
+    </> */
   );
 }

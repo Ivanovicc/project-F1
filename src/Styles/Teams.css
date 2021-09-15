@@ -1,4 +1,4 @@
-.grid-title {
+/* .grid-title {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -75,4 +75,76 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 60px;
   grid-auto-rows: minmax(100px, auto);
+}
+ */
+.teams-box {
+  display: block;
+  padding: 2rem;
+}
+
+.team-fieldset {
+  border: 0;
+  width: 100%;
+  border-top: solid 10px;
+  border-right: solid 10px;
+  border-color: rgb(132, 122, 108);
+  border-top-right-radius: 15px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-field {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.title-field h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2rem;
+}
+
+.box-description {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.box-text {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(27, 30, 31);
+}
+
+.box-text p {
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  max-width: 50%;
+}
+
+.teams-content {
+  width: 100%;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teams-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  grid-auto-rows: minmax(
+    100px,
+    auto
+  ); /* 
+  margin-left: 10px;
+  margin-right: 10px; */
 }
