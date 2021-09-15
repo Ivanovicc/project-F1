@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 /* Styles */
 import "../Styles/Team.css";
 
@@ -15,31 +15,32 @@ export default function Team({
 
   return (
     <div className="card-team">
-      <a className="link-driver">
-        <fieldset className="field-link">
-          <div className="rank-wrapper">
-            <div className="current-points">points</div>
-            <div className="points-label">PTS</div>
+      <a className="link-team" href="#">
+        <fieldset className="field-team">
+          <div className="rank-team">
+            <div className="rank">rank</div>
+            <div className="points">
+              <div>999</div>
+              <div>PTS</div>
+            </div>
           </div>
-          <div className="name-wrapper">
-            <div className="driver-span">
+          <div className="team-name">
+            <div className="team-span">
               <span>{name}</span>
             </div>
           </div>
-          <div className="rank-wrapper">
-            <div>
+          <div className="team-drivers">
+            <div className="driver">
               <span>{drivers[0].lastName}</span>
             </div>
-            <div>
+            <div className="driver">
               <span>{drivers[1].lastName}</span>
             </div>
           </div>
-          <div>
-            <div>
-              <picture>
-                <img src={carImg} alt="" />
-              </picture>
-            </div>
+          <div className="image-wrapper">
+            <picture className="team-car">
+              <img src={carImg} alt="" className="lazy loaded" />
+            </picture>
           </div>
         </fieldset>
       </a>
