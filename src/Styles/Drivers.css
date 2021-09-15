@@ -75,7 +75,8 @@
 }
 
 .header-container,
-.description-box {
+.description-box,
+.drivers-content {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -116,9 +117,9 @@
 
 .box-title h1 {
   margin: 0;
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 36px;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2rem;
 }
 
 .box-descrip {
@@ -145,15 +146,15 @@
 }
 
 .drivers-container {
-  margin-top: 4rem;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
-  /* display: grid;
+  /*  margin-top: 4rem; */
+  /* display: flex;
+  flex-wrap: wrap; */
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 60px;
-  grid-auto-rows: minmax(100px, auto); */
+  grid-auto-rows: minmax(100px, auto);
 }
 
 /* .driver-card {

@@ -47,7 +47,7 @@ export default function Drivers() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="drivers-content">
         <div className="drivers-container">
           {drivers
             .sort((a, b) => {

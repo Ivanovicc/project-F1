@@ -4,6 +4,7 @@ html,
 body {
   color: #e8e6e3;
   background-color: rgb(24, 26, 27);
+  background-size: 100% auto;
   margin: 0;
   height: 100vh;
   font-family: "Josefin Sans", sans-serif;
