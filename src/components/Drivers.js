@@ -3,7 +3,6 @@ import db from "../services/firebaseConfig";
 /* Styles */
 import "../Styles/Drivers.css";
 /* Components */
-/* import { getDrivers } from "../api"; */
 import Driver from "./Driver";
 
 export default function Drivers() {

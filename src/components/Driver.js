@@ -11,35 +11,34 @@ export default function Driver({
   currPoints,
   currentPos,
 }) {
+  const linkColor = {
+    color:
+      team === "Red Bull Racing"
+        ? "#0600ef"
+        : "currentcolor" && team === "Mercedes"
+        ? "#00d2be"
+        : "currentcolor" && team === "McLaren"
+        ? "#FF9800"
+        : "currentcolor" && team === "Ferrari"
+        ? "#dc0000"
+        : "currentcolor" && team === "Alpine"
+        ? "#0090ff"
+        : "currentcolor" && team === "Aston Martin"
+        ? "#006f62"
+        : "currentcolor" && team === "AlphaTauri"
+        ? "#2b4562"
+        : "currentcolor" && team === "Williams"
+        ? "#005aff"
+        : "currentcolor" && team === "Alfa Romeo Racing"
+        ? "#900000"
+        : "currentcolor" && team === "Haas F1 Team"
+        ? "#ffffff"
+        : "currentcolor",
+  };
+
   return (
     <div className="card-driver">
-      <a
-        className="link-driver"
-        style={{
-          color:
-            team === "Red Bull Racing"
-              ? "#0600ef"
-              : "currentcolor" && team === "Mercedes"
-              ? "#00d2be"
-              : "currentcolor" && team === "McLaren"
-              ? "#FF9800"
-              : "currentcolor" && team === "Ferrari"
-              ? "#dc0000"
-              : "currentcolor" && team === "Alpine"
-              ? "#0090ff"
-              : "currentcolor" && team === "Aston Martin"
-              ? "#006f62"
-              : "currentcolor" && team === "AlphaTauri"
-              ? "#2b4562"
-              : "currentcolor" && team === "Williams"
-              ? "#005aff"
-              : "currentcolor" && team === "Alfa Romeo Racing"
-              ? "#900000"
-              : "currentcolor" && team === "Haas F1 Team"
-              ? "#ffffff"
-              : "currentcolor",
-        }}
-      >
+      <a href="_blank" className="link-driver" style={linkColor}>
         <fieldset className="field-link">
           <div className="rank-wrapper">
             <div className="rank">{currentPos}</div>
@@ -63,7 +62,7 @@ export default function Driver({
           <p className="team-driver">{team}</p>
           <div className="photo-wrapper">
             <picture className="driver-pic">
-              <img src={photo[0]} alt="driver-photo" />
+              <img src={photo[0]} alt="driver-pic" />
             </picture>
             <picture className="driver-num">
               <img src={number[1]} alt="driver-number" />

@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from "react";
+import db from "../services/firebaseConfig";
 /* Styles */
 import "../Styles/Teams.css";
 /* Components */
-import { getTeams } from "../api";
 import Team from "./Team";
 
 export default function Teams() {
   const [teams, setTeams] = useState([]);
 
   const fetchTeams = async () => {
-    const data = await getTeams();
-    setTeams(data);
+    db.collection("teams").onSnapshot((querySnapshot) => {
+      const teams = [];
+      querySnapshot.forEach((doc) => {
+        teams.push(doc.data());
+      });
+      setTeams(teams);
+    });
   };
 
   useEffect(() => {
@@ -35,20 +40,25 @@ export default function Teams() {
       </div>
       <div className="teams-content">
         <div className="teams-wrapper">
-          {teams.map((t) => {
-            return (
-              <Team
-                key={t.id}
-                name={t.name}
-                imgTeam={t.imgTeam}
-                carImg={t.carImg}
-                chasis={t.chasis}
-                drivers={t.drivers}
-                powerUnity={t.powerUnity}
-                nationality={t.nationality}
-              />
-            );
-          })}
+          {teams
+            .sort((a, b) => {
+              if (a.points < b.points) {
+                return 1;
+              } else return -1;
+            })
+            .map((t, key) => {
+              return (
+                <Team
+                  key={key}
+                  points={t.points}
+                  rank={t.rank}
+                  name={t.name}
+                  logo={t.logo}
+                  car={t.car}
+                  drivers={t.drivers}
+                />
+              );
+            })}
         </div>
       </div>
     </main>
