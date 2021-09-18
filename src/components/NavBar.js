@@ -11,16 +11,16 @@ export default function NavBar() {
           <div className="primary-links">
             <ul className="nav-list">
               <li className="nav-item">
-                <Link to="/Home">Home</Link>
+                <Link to="/home">Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/Drivers">Drivers</Link>
+                <Link to="/drivers">Drivers</Link>
               </li>
               <li className="nav-item">
-                <Link to="/Teams">Teams</Link>
+                <Link to="/teams">Teams</Link>
               </li>
               <li className="nav-item">
-                <Link to="/Circuits">Circuits</Link>
+                <Link to="/circuits">Circuits</Link>
               </li>
             </ul>
           </div>

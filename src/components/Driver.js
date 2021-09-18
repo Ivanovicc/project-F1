@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 /* Styles */
 import "../Styles/Driver.css";
 
@@ -10,6 +11,7 @@ export default function Driver({
   countryFlag,
   currPoints,
   currentPos,
+  id,
 }) {
   const linkColor = {
     color:
@@ -38,7 +40,7 @@ export default function Driver({
 
   return (
     <div className="card-driver">
-      <a href="_blank" className="link-driver" style={linkColor}>
+      <Link to={`drivers/${id}`} className="link-driver" style={linkColor}>
         <fieldset className="field-link">
           <div className="rank-wrapper">
             <div className="rank">{currentPos}</div>
@@ -69,7 +71,7 @@ export default function Driver({
             </picture>
           </div>
         </fieldset>
-      </a>
+      </Link>
     </div>
     /* <div
       className="container"

@@ -6,25 +6,19 @@ import NavBar from "./components/NavBar";
 import Drivers from "./components/Drivers";
 import Teams from "./components/Teams";
 import Circuits from "./components/Circuits";
+import DriverInfo from "./components/DriverInfo";
 
 export default function App() {
   return (
     <>
-      <Redirect from="/" to="/Home" />
+      <Redirect from="/" to="/home" />
       <NavBar />
       <Switch>
-        <Route exact path="/Home">
-          <Home />
-        </Route>
-        <Route exact path="/Drivers">
-          <Drivers />
-        </Route>
-        <Route exact path="/Teams">
-          <Teams />
-        </Route>
-        <Route exact path="/Circuits">
-          <Circuits />
-        </Route>
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/drivers" component={Drivers} />
+        <Route exact path="/drivers/:id" component={DriverInfo} />
+        <Route exact path="/teams" component={Teams} />
+        <Route exact path="/circuits" component={Circuits} />
       </Switch>
     </>
   );

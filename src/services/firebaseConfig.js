@@ -19,3 +19,37 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 export default db;
+
+export const fetchDriverInfo = () => {
+  return db
+    .collection("drivers")
+    .get()
+    .then((snapshot) => {
+      return snapshot.docs.map((doc) => {
+        const data = doc.data();
+        const id = doc.id;
+
+        return {
+          id,
+          ...data,
+        };
+      });
+    });
+};
+
+export const fetchTeamsInfo = () => {
+  return db
+    .collection("teams")
+    .get()
+    .then((snapshot) => {
+      return snapshot.docs.map((doc) => {
+        const data = doc.data();
+        const id = doc.id;
+
+        return {
+          id,
+          ...data,
+        };
+      });
+    });
+};

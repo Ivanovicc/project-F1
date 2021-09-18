@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import db from "../services/firebaseConfig";
+import { fetchDriverInfo } from "../services/firebaseConfig";
 /* Styles */
 import "../Styles/Drivers.css";
 /* Components */
@@ -8,18 +8,8 @@ import Driver from "./Driver";
 export default function Drivers() {
   const [drivers, setDrivers] = useState([]);
 
-  const fetchDriver = () => {
-    db.collection("drivers").onSnapshot((querySnapshot) => {
-      const drivers = [];
-      querySnapshot.forEach((doc) => {
-        drivers.push(doc.data());
-      });
-      setDrivers(drivers);
-    });
-  };
-
   useEffect(() => {
-    fetchDriver();
+    fetchDriverInfo().then(setDrivers);
   }, []);
 
   return (
@@ -54,20 +44,32 @@ export default function Drivers() {
                 return 1;
               } else return -1;
             })
-            .map((d, key) => {
-              return (
-                <Driver
-                  key={key}
-                  currentPos={d.currentPos}
-                  currPoints={d.currPoints}
-                  number={d.number}
-                  photo={d.photo}
-                  name={d.name}
-                  team={d.team}
-                  countryFlag={d.countryFlag}
-                />
-              );
-            })}
+            .map(
+              ({
+                id,
+                currPoints,
+                currentPos,
+                number,
+                photo,
+                name,
+                team,
+                countryFlag,
+              }) => {
+                return (
+                  <Driver
+                    key={id}
+                    id={id}
+                    currentPos={currentPos}
+                    currPoints={currPoints}
+                    number={number}
+                    photo={photo}
+                    name={name}
+                    team={team}
+                    countryFlag={countryFlag}
+                  />
+                );
+              }
+            )}
         </div>
       </div>
     </main>

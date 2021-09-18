@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import db from "../services/firebaseConfig";
+import { fetchTeamsInfo } from "../services/firebaseConfig";
 /* Styles */
 import "../Styles/Teams.css";
 /* Components */
@@ -8,18 +8,8 @@ import Team from "./Team";
 export default function Teams() {
   const [teams, setTeams] = useState([]);
 
-  const fetchTeams = async () => {
-    db.collection("teams").onSnapshot((querySnapshot) => {
-      const teams = [];
-      querySnapshot.forEach((doc) => {
-        teams.push(doc.data());
-      });
-      setTeams(teams);
-    });
-  };
-
   useEffect(() => {
-    fetchTeams();
+    fetchTeamsInfo().then(setTeams);
   }, []);
 
   return (
@@ -46,16 +36,16 @@ export default function Teams() {
                 return 1;
               } else return -1;
             })
-            .map((t, key) => {
+            .map(({ id, points, rank, name, logo, car, drivers }) => {
               return (
                 <Team
-                  key={key}
-                  points={t.points}
-                  rank={t.rank}
-                  name={t.name}
-                  logo={t.logo}
-                  car={t.car}
-                  drivers={t.drivers}
+                  key={id}
+                  points={points}
+                  rank={rank}
+                  name={name}
+                  logo={logo}
+                  car={car}
+                  drivers={drivers}
                 />
               );
             })}
