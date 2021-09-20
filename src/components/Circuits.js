@@ -2,19 +2,19 @@ import React, { useEffect, useState } from "react";
 /* Styles */
 import "../Styles/Circuits.css";
 /* Components */
-import { getCircuits } from "../api";
+
 import Circuit from "./Circuit";
 
 export default function Circuits() {
   const [circuits, setCircuits] = useState([]);
 
-  const fetchCircuit = async () => {
+  /* const fetchCircuit = async () => {
     const data = await getCircuits();
     setCircuits(data);
-  };
+  }; */
 
   useEffect(() => {
-    fetchCircuit();
+    /* fetchCircuit(); */
   }, []);
 
   return (
