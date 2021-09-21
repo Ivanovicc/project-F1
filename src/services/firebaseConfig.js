@@ -37,6 +37,15 @@ export const fetchDriverInfo = () => {
     });
 };
 
+/* export const fetchDriverProfile = async (id) => {
+  const document = await db
+    .collection("drivers")
+    .where("name", "==", true)
+    .get();
+
+  console.log(document.id);
+}; */
+
 export const fetchTeamsInfo = () => {
   return db
     .collection("teams")
