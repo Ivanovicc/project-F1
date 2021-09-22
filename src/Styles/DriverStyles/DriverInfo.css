@@ -1,0 +1,110 @@
+.main-template {
+  padding: 40px;
+}
+
+.main-template article {
+  padding: 0 40px 0;
+}
+
+.inner-wrap {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.driver-profile {
+  background-color: rgb(27, 30, 31);
+  overflow: hidden;
+  position: relative;
+}
+
+.profile {
+  width: 50%;
+  padding: 0 1px 0 0;
+  float: left;
+  min-height: 20px;
+}
+
+.title-driver {
+  overflow: hidden;
+}
+
+.driver-image {
+  width: 100%;
+  margin: 0 auto;
+  height: 452px;
+  overflow: hidden;
+}
+
+.driver-image img {
+  display: block;
+  margin-left: -360px;
+  position: relative;
+  left: 50%;
+  width: 720px;
+  height: auto;
+}
+
+/* .driver-details {
+  padding: 35px 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.driver-race-number {
+  letter-spacing: -1px;
+  font-weight: 500;
+  font-size: 3.5rem;
+  margin: 0 0 15px;
+} 
+
+.icon-flag {
+  display: inline-block;
+  height: 32px;
+  margin: 0 0 0 15px;
+  position: relative;
+  top: -2px;
+  width: 48px;
+}
+
+.icon-flag img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.driver-name {
+  font-weight: 700;
+  font-size: 3rem;
+}
+ */
+.stats {
+  padding: 0 0 0 1px;
+  float: left;
+  min-height: 20px;
+  width: 50%;
+}
+
+.list-container {
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.stats-list {
+  margin: 20px 0 0;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.list-container .stat-key {
+  padding: 4px 0 4px 10px;
+  text-align: left;
+  width: 50%;
+  font-weight: 800;
+  line-height: 1.5rem;
+}
+
+.main-template .list-container .stat-value {
+  padding-left: 30px;
+  font-weight: 400;
+}

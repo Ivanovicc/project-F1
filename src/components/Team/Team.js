@@ -1,10 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 /* Styles */
-import "../Styles/Team.css";
+import "../../Styles/TeamStyles/Team.css";
 
-export default function Team({ name, logo, car, rank, drivers, points }) {
-  /*  const [flip, setFlip] = useState(false); */
-
+export default function Team({ name, logo, car, rank, drivers, points, id }) {
   const styleColor = {
     color:
       name === "Red Bull Racing"
@@ -32,7 +31,7 @@ export default function Team({ name, logo, car, rank, drivers, points }) {
 
   return (
     <div className="card-team">
-      <a className="link-team" href="_blank">
+      <Link className="link-team" to={`teams/${id}`}>
         <fieldset className="field-team" style={styleColor}>
           <div className="rank-team">
             <div className="rank">{rank}</div>
@@ -68,48 +67,7 @@ export default function Team({ name, logo, car, rank, drivers, points }) {
             </picture>
           </div>
         </fieldset>
-      </a>
+      </Link>
     </div>
-    /* <>
-      <div
-        className={`team-container ${flip ? "flip" : ""}`}
-        onClick={() => setFlip(!flip)}
-      >
-        <div className="team-front">
-          <div className="team-image">
-            <img src={imgTeam} alt={chasis} />
-          </div>
-          <div className="car-image">
-            <img src={carImg} alt={name} />
-          </div>
-          <div className="team-name">
-            <h2>{name}</h2>
-          </div>
-        </div>
-        <div className="team-back">
-          <div className="back-title">
-            <h1>Info</h1>
-          </div>
-          <ul className="box-info">
-            <li>
-              Drivers: <span>{drivers[0].lastName}</span>,
-              <span> {drivers[1].lastName}</span>
-            </li>
-
-            <li>
-              Power Unity: <span>{powerUnity}</span>
-            </li>
-
-            <li>
-              Chasis: <span>{chasis}</span>
-            </li>
-
-            <li>
-              Nationality: <span>{nationality}</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </> */
   );
 }

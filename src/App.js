@@ -3,10 +3,11 @@ import { Switch, Route, Redirect } from "react-router-dom";
 /* Components */
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-import Drivers from "./components/Drivers";
-import Teams from "./components/Teams";
+import Drivers from "./components/Driver/Drivers";
+import DriverInfo from "./components/Driver/DriverInfo";
+import Teams from "./components/Team/Teams";
+import TeamInfo from "./components/Team/TeamInfo";
 import Circuits from "./components/Circuits";
-import DriverInfo from "./components/DriverInfo";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route exact path="/drivers" component={Drivers} />
         <Route exact path="/drivers/:id" component={DriverInfo} />
         <Route exact path="/teams" component={Teams} />
+        <Route exact path="/teams/:id" component={TeamInfo} />
         <Route exact path="/circuits" component={Circuits} />
       </Switch>
     </>

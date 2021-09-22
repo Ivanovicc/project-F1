@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 /* Styles */
-import "../Styles/Driver.css";
+import "../../Styles/DriverStyles/Driver.css";
 
 export default function Driver({
   number,
@@ -73,27 +73,5 @@ export default function Driver({
         </fieldset>
       </Link>
     </div>
-    /* <div
-      className="container"
-      style={{
-        backgroundImage: `url(${photo[1]})`,
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="container__info">
-        <span>
-          <img src={number[1]} alt="img-number" />
-        </span>
-      </div>
-      <div className="container__profile">
-        <img src={countryFlag} alt="driver-flag" />
-        <div className="container__profile__text">
-          <h2>{name}</h2>
-          <p>
-            <b>{team}</b>
-          </p>
-        </div>
-      </div>
-    </div> */
   );
 }

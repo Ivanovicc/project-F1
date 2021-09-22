@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { fetchTeamsInfo } from "../services/firebaseConfig";
+import { fetchTeamsInfo } from "../../services/firebaseConfig";
 /* Styles */
-import "../Styles/Teams.css";
+import "../../Styles/TeamStyles/Teams.css";
 /* Components */
 import Team from "./Team";
 
@@ -40,6 +40,7 @@ export default function Teams() {
               return (
                 <Team
                   key={id}
+                  id={id}
                   points={points}
                   rank={rank}
                   name={name}
@@ -52,30 +53,5 @@ export default function Teams() {
         </div>
       </div>
     </main>
-    /* <>
-      <div className="grid-title">
-        <div className="title-wrap">
-          <h1>TEAMS</h1>
-        </div>
-      </div>
-      <section className="grid-teams">
-        <div className="teams-wrapper">
-          {teams.map((t) => {
-            return (
-              <Team
-                key={t.id}
-                name={t.name}
-                imgTeam={t.imgTeam}
-                carImg={t.carImg}
-                chasis={t.chasis}
-                drivers={t.drivers}
-                powerUnity={t.powerUnity}
-                nationality={t.nationality}
-              />
-            );
-          })}
-        </div>
-      </section>
-    </> */
   );
 }

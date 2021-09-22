@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i");
+@font-face {
+  font-family: F1Regular;
+  src: url("../Styles/Fonts/Formula1-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: F1Bold;
+  src: url("../Styles/Fonts/Formula1-Bold.otf");
+}
+
+@font-face {
+  font-family: F1Wide;
+  src: url("../Styles/Fonts/Formula1-Wide.otf");
+}
 
 html,
 body {
@@ -7,7 +21,7 @@ body {
   background-size: 100% auto;
   margin: 0;
   height: 100vh;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: F1Regular, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
