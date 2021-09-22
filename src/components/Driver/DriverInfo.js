@@ -43,19 +43,6 @@ export default function DriverInfo() {
                     alt="driver_pic"
                   />
                 </div>
-                {/* <figcaption className="driver-details">
-                  <div className="driver-race-number">
-                    <span>
-                      {driverDetails.number
-                        ? driverDetails.number[0]
-                        : "loading..."}
-                    </span>
-                    <span className="icon-flag">
-                      <img src={driverDetails.countryFlag} alt="driver_flag" />
-                    </span>
-                  </div>
-                  <h1 className="driver-name">{driverDetails.name}</h1>
-                </figcaption> */}
               </figure>
             </section>
             <section className="stats">
@@ -131,6 +118,14 @@ export default function DriverInfo() {
               </div>
             </section>
           </header>
+          <section className="driver-biography">
+            <div className="bio-title">
+              <h3>Biography</h3>
+            </div>
+            <div className="bio-text">
+              <p>{driverDetails.bio}</p>
+            </div>
+          </section>
         </div>
       </article>
     </main>
