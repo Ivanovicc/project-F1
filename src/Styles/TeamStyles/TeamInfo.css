@@ -1,0 +1,52 @@
+.main-team {
+  display: block;
+  padding: 40px;
+}
+
+.main-team article {
+  padding: 0 40px 0;
+}
+
+.wrap-group {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.team-details {
+  margin: 0 0 2px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(27, 30, 31);
+}
+
+.main-team .team-stats {
+  padding: 0 0 0 1px;
+  float: left;
+  min-height: 20px;
+  width: 50%;
+}
+
+.list-component {
+  padding: 40px 40px 0 40px;
+}
+
+.brand-logo {
+  float: left;
+  height: auto;
+  padding: 0 10px 0 0;
+  width: 50%;
+}
+
+.brand-logo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.list-component .stat-list {
+  margin: 20px 0 0;
+  width: 100%;
+}

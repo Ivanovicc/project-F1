@@ -7,7 +7,6 @@ import Drivers from "./components/Driver/Drivers";
 import DriverInfo from "./components/Driver/DriverInfo";
 import Teams from "./components/Team/Teams";
 import TeamInfo from "./components/Team/TeamInfo";
-import Circuits from "./components/Circuits";
 
 export default function App() {
   return (
@@ -20,7 +19,6 @@ export default function App() {
         <Route exact path="/drivers/:id" component={DriverInfo} />
         <Route exact path="/teams" component={Teams} />
         <Route exact path="/teams/:id" component={TeamInfo} />
-        <Route exact path="/circuits" component={Circuits} />
       </Switch>
     </>
   );
