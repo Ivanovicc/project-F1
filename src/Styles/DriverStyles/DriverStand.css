@@ -1,0 +1,111 @@
+.stands-container {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.f1-standings .title-standing {
+  margin: 20px 0 30px 0;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.title-standing {
+  color: rgb(232, 230, 227);
+}
+
+.f1-standings .f1-positions {
+  margin: 0 10px 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(27, 30, 31);
+}
+
+.f1-positions {
+  list-style-type: none;
+}
+
+.podium-item {
+  display: flex;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 2px;
+  overflow: hidden;
+  padding: 5px 10px;
+}
+
+.f1-standings .podium-div {
+  padding: 10px 5px 10px 10px;
+  transition: 0.4s cubic-bezier(0.35, 0.15, 0.6, 1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 2px;
+  overflow: hidden;
+}
+
+.f1-standings .podium-rank {
+  position: relative;
+  top: 1px;
+  text-align: right;
+  width: 20px;
+}
+
+.podium-rank {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.team-color-icon {
+  width: 4px;
+  height: 14px;
+  margin: 0 10px;
+  background-color: currentColor;
+}
+
+.podium-driver {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.f1-standings .podium-div .podium-subdetail {
+  margin-left: 10px;
+}
+
+.podium-subdetail {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: rgb(165, 157, 146);
+}
+
+.f1-standings .podium-right {
+  margin-left: auto;
+}
+
+.f1-standings .podium-label {
+  margin-left: 5px;
+  display: inline;
+}
+
+.podium-label {
+  min-width: 95px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  background-color: rgb(24, 26, 27);
+  border-radius: 15px;
+  line-height: 15px;
+  padding: 4px 10px;
+  width: auto;
+}

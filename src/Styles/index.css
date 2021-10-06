@@ -14,6 +14,13 @@
   src: url("../Styles/Fonts/Formula1-Wide.otf");
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   color: #e8e6e3;
